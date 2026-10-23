@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil TV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="screen active">
+        <div class="splash-content">
+            <div class="splash-logo">BRASIL TV</div>
+            <div class="splash-status">Carregando canais...</div>
+            <div class="splash-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Main Screen (Channel List + EPG) -->
+    <div id="main-screen" class="screen">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="top-bar-logo">BRASIL TV</div>
+            <div class="top-bar-clock" id="clock"></div>
+        </div>
+
+        <!-- Category Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-items" id="category-list"></div>
+        </div>
+
+        <!-- Channel List -->
+        <div class="channel-area">
+            <div class="channel-list" id="channel-list"></div>
+        </div>
+
+        <!-- EPG Panel (right side) -->
+        <div class="epg-panel" id="epg-panel">
+            <div class="epg-header">
+                <div class="epg-channel-name" id="epg-channel-name">Selecione um canal</div>
+            </div>
+            <div class="epg-programs" id="epg-programs"></div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-bar">
+            <span class="key-hint"><span class="key">&#9664;&#9654;</span> Navegar</span>
+            <span class="key-hint"><span class="key">OK</span> Assistir</span>
+            <span class="key-hint"><span class="key">&#9650;&#9660;</span> Canais</span>
+            <span class="key-hint"><span class="key">BACK</span> Voltar</span>
+        </div>
+    </div>
+
+    <!-- Player Screen -->
+    <div id="player-screen" class="screen">
+        <div id="player-container">
+            <object id="av-player" type="application/avplayer" style="width:100%;height:100%;"></object>
+            <video id="html5-player" style="width:100%;height:100%;display:none;"></video>
+        </div>
+
+        <!-- Player OSD (On Screen Display) -->
+        <div id="player-osd" class="player-osd hidden">
+            <div class="osd-top">
+                <div class="osd-channel-num" id="osd-channel-num"></div>
+                <div class="osd-channel-name" id="osd-channel-name"></div>
+                <div class="osd-clock" id="osd-clock"></div>
+            </div>
+            <div class="osd-bottom">
+                <div class="osd-program-title" id="osd-program-title"></div>
+                <div class="osd-progress">
+                    <div class="osd-progress-bar" id="osd-progress-bar"></div>
+                </div>
+                <div class="osd-program-time" id="osd-program-time"></div>
+            </div>
+        </div>
+
+        <!-- Channel Switch Overlay -->
+        <div id="channel-switch" class="channel-switch hidden">
+            <div class="switch-number" id="switch-number"></div>
+        </div>
+    </div>
+
+    <!-- Settings/Config Screen -->
+    <div id="settings-screen" class="screen">
+        <div class="settings-container">
+            <h1>Configurações</h1>
+            <div class="settings-list" id="settings-list">
+                <div class="setting-item focusable" data-setting="server">
+                    <span class="setting-label">Servidor de Stream</span>
+                    <span class="setting-value" id="setting-server">Padrão</span>
+                </div>
+                <div class="setting-item focusable" data-setting="epg-region">
+                    <span class="setting-label">Região EPG</span>
+                    <span class="setting-value" id="setting-epg-region">20</span>
+                </div>
+                <div class="setting-item focusable" data-setting="quality">
+                    <span class="setting-label">Qualidade</span>
+                    <span class="setting-value" id="setting-quality">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/hls.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/epg.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
