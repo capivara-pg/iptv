@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.mobile.brasiltv.view.adView.AdaptiveAdView
+        android:id="@+id/mAavSmartAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.mobile.brasiltv.view.adView.AdvertImageView
+        android:id="@+id/mIvAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:adjustViewBounds="true"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/color_fefefe"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:id="@+id/mTvFlag"
+        android:background="@color/color_99000000"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:layout_marginTop="30px"
+        android:minWidth="120px"
+        android:text="@string/ads"
+        android:paddingStart="10px"
+        android:paddingEnd="10px"/>
+</merge>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.adimage.view.TraceAdImageView
+        android:id="@+id/mIvAd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:layout_gravity="top|right"
+        android:id="@+id/mTvCountDown"
+        android:background="@drawable/bg_launch_ad_count_down"
+        android:paddingLeft="36px"
+        android:paddingRight="36px"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="58px"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="10px"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:layout_gravity="bottom|left"
+        android:id="@+id/mTvFlag"
+        android:background="@drawable/bg_launch_ad_count_down"
+        android:paddingLeft="32px"
+        android:paddingRight="32px"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="58px"
+        android:layout_marginLeft="10px"
+        android:layout_marginBottom="10px"
+        android:text="@string/ad_ad_flag"/>
+</merge>

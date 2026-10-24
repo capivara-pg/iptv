@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/um_interstitial_content"
+    android:background="#0000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/um_interstitial_iv_close"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/umeng_union_close2"
+        android:paddingStart="4dp"/>
+    <FrameLayout
+        android:id="@+id/um_interstitial_frame"
+        android:background="#08ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <ImageView
+            android:layout_gravity="start|bottom"
+            android:id="@+id/um_interstitial_mark"
+            android:layout_width="22dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="fitXY"
+            android:layout_marginStart="4dp"/>
+    </FrameLayout>
+    <include
+        android:id="@+id/um_interstitial_bottom"
+        layout="@layout/umeng_interstitial_btm_layout"/>
+</LinearLayout>

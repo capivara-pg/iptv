@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_1f202a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.TitleView
+        android:id="@+id/title_view"
+        android:background="@color/color_191a23"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        app:titleViewTitle="@string/game_center_title"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mRvGame"
+        android:layout_width="702px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"/>
+</com.zhy.autolayout.AutoLinearLayout>

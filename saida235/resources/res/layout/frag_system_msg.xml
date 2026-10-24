@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mSrlRefresh"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoFrameLayout
+        android:orientation="vertical"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRvContent"
+            android:paddingLeft="24px"
+            android:paddingTop="8px"
+            android:paddingRight="24px"
+            android:visibility="gone"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/mAllMsgEmpty"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/mIvMsgEmpty"
+                android:layout_width="361px"
+                android:layout_height="290px"
+                android:src="@drawable/ic_msg_box_empty"/>
+            <TextView
+                android:textSize="28px"
+                android:textColor="@color/color_important_white"
+                android:id="@+id/mTvMsgEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:text="No new messages"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

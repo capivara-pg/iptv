@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/mIvBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/color_fefefe"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:id="@+id/mTvAdFlag"
+        android:background="@color/color_99000000"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:minWidth="120px"
+        android:text="@string/ads"
+        android:paddingStart="10px"
+        android:paddingEnd="10px"/>
+</com.zhy.autolayout.AutoFrameLayout>

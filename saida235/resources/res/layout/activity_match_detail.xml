@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_191a23"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/mTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.mobile.brasiltv.view.RatioFrameLayout
+        android:id="@+id/matchPlayFrg"
+        android:layout_width="match_parent"
+        android:layout_height="418px"
+        app:enable="true"
+        app:ratio="1.78">
+        <ViewStub
+            android:id="@+id/mStubMatchStatus"
+            android:layout="@layout/stub_match_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.mobile.brasiltv.view.RatioFrameLayout>
+    <ViewStub
+        android:id="@+id/mStubMatchChannelList"
+        android:layout="@layout/stub_match_channel_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="@+id/mStubMatchNavigation"
+        android:layout="@layout/stub_match_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8px"/>
+</com.zhy.autolayout.AutoLinearLayout>

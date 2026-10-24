@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mLayout"
+    android:background="@color/color_424242"
+    android:layout_width="210px"
+    android:layout_height="80px">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/mLlName"
+        android:paddingLeft="17px"
+        android:paddingTop="11px"
+        android:paddingRight="17px"
+        android:paddingBottom="9px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="28px"
+            android:textColor="@color/selector_color_subtitle_option"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/mTvOption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/subtitle_language_pt"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView
+        android:layout_gravity="bottom|right"
+        android:id="@+id/mIvSelected"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:src="@drawable/selector_subtitle_option_selected_enable"/>
+</com.zhy.autolayout.AutoFrameLayout>

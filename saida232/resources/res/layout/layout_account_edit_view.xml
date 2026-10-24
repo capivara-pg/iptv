@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/mIvType"
+        android:padding="29px"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:scaleType="fitXY"/>
+    <EditText
+        android:textSize="12sp"
+        android:textColor="@color/color_ffffff"
+        android:textColorHint="@color/color_999999"
+        android:gravity="center"
+        android:id="@+id/mEtInput"
+        android:background="@null"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/mIvClear"
+        android:padding="29px"
+        android:visibility="gone"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:scaleType="fitXY"/>
+</merge>

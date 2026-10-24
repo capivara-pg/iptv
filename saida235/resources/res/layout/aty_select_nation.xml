@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        app:titleViewTitle="@string/country_and_regions"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:background="@color/color_1f202a"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectNationList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.mobile.brasiltv.view.SideBar
+            android:id="@+id/selectNationSlideBar"
+            android:layout_width="30px"
+            android:layout_height="820px"
+            android:layout_marginRight="10px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

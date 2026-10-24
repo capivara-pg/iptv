@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mLlTab"
+    android:layout_width="wrap_content"
+    android:layout_height="84px"
+    android:minWidth="128px">
+    <TextView
+        android:textSize="28px"
+        android:textColor="@color/selector_color_search_tab"
+        android:gravity="center"
+        android:id="@+id/mTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_marginTop="36px"
+        android:minWidth="128px"/>
+    <View
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mViewIndicator"
+        android:background="@drawable/selector_bg_search_tab_line"
+        android:visibility="visible"
+        android:layout_width="32px"
+        android:layout_height="4px"
+        android:layout_marginTop="4px"/>
+</com.zhy.autolayout.AutoLinearLayout>

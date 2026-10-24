@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/llSwitchContainer"
+    android:background="@color/color_1a1a1a"
+    android:visibility="gone"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="28px"
+        android:textColor="@color/ffffff"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mTvSwitchTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27px"
+        android:layout_marginTop="120px"
+        android:layout_marginRight="27px"
+        android:text="@string/cast_content_not_support_google"/>
+    <TextView
+        android:textSize="32px"
+        android:textColor="@color/ffffff"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvConfirm"
+        android:background="@drawable/bg_btn_redemption"
+        android:layout_width="330px"
+        android:layout_height="90px"
+        android:layout_marginTop="65px"
+        android:text="@string/yes"/>
+</com.zhy.autolayout.AutoLinearLayout>

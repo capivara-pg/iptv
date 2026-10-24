@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.mobile.brasiltv.view.AutoCardView
+        android:id="@+id/mLayoutStream"
+        android:clickable="true"
+        android:layout_width="379px"
+        android:layout_height="214px"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        app:cardCornerRadius="8px">
+        <com.mobile.brasiltv.view.adView.AdvertImageView
+            android:id="@+id/iv_ad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:textSize="28px"
+            android:textColor="@color/color_ffffff"
+            android:layout_gravity="right"
+            android:id="@+id/tv_flag"
+            android:background="@drawable/live_stream_ad"
+            android:paddingLeft="17px"
+            android:paddingRight="17px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="17px"/>
+    </com.mobile.brasiltv.view.AutoCardView>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="@color/color_fffefe"
+        android:id="@+id/mTvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:layout_marginTop="20px"
+        android:text="@string/live_promotion"/>
+</com.zhy.autolayout.AutoLinearLayout>

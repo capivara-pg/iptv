@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_1f202a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.TitleView
+        android:id="@+id/mTileView"
+        android:background="@color/color_191a23"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        app:titleViewTitle="@string/switch_account_title"/>
+    <ListView
+        android:id="@+id/mAccountList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="148px"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/color_191a23"
+        android:dividerHeight="1px"/>
+    <TextView
+        android:textSize="28px"
+        android:textColor="@color/color_1a1a1a"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/mTvError"
+        android:background="@drawable/bg_radius_white"
+        android:visibility="gone"
+        android:layout_width="680px"
+        android:layout_height="wrap_content"
+        android:minHeight="100px"
+        android:text="@string/switch_account_expired"/>
+</com.zhy.autolayout.AutoFrameLayout>

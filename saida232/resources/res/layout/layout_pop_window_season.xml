@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mLayoutSeason"
+    android:background="@drawable/shape_bg_pop_subtitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="top|right"
+        android:id="@+id/mIvClose"
+        android:padding="28px"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:layout_marginTop="10px"
+        android:src="@drawable/icon_pop_subtitle_close"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/mRvSeason"
+        android:paddingTop="58px"
+        android:paddingBottom="58px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.zhy.autolayout.AutoFrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_pop_auth_info"
+    android:layout_width="396px"
+    android:layout_height="wrap_content"
+    android:minHeight="151px">
+    <TextView
+        android:textSize="20px"
+        android:textColor="@color/color_secondary_text"
+        android:id="@+id/mTvAuthInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20px"
+        android:textColor="@color/color_secondary_text"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/mTvNoPurchase"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/package_not_purchased"/>
+</com.zhy.autolayout.AutoFrameLayout>

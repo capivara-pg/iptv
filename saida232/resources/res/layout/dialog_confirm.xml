@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_common_alert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/color_595959"
+        android:gravity="center"
+        android:id="@+id/mTvContent"
+        android:padding="10px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:id="@+id/mTvConfirm"
+        android:background="@drawable/selector_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="56px"
+        android:layout_marginRight="56px"
+        android:layout_marginBottom="40px"
+        android:text="@string/confirm"/>
+</com.zhy.autolayout.AutoLinearLayout>

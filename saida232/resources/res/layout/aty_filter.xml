@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mAllRoot"
+    android:background="@color/color_bg"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.TitleBarView
+        android:id="@+id/mTbvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        app:compatBarHeight="false"
+        app:titleText="@string/title_filter"
+        app:titleTextColor="@color/white"/>
+    <ViewStub
+        android:id="@+id/mVsFilter"
+        android:layout="@layout/layout_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.mobile.brasiltv.view.KoocanEmptyView
+        android:id="@+id/mKevCondLoading"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyShowType="loading"/>
+</com.zhy.autolayout.AutoLinearLayout>

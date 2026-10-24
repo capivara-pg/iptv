@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.CustomEmptyView
+        android:id="@+id/mEmptyView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-144px"
+        app:emptyShowType="loading"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRvResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:overScrollMode="never"/>
+</com.zhy.autolayout.AutoLinearLayout>

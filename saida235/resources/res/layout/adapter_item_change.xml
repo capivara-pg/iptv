@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="68px">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/flag"
+        android:visibility="gone"
+        android:layout_width="29px"
+        android:layout_height="19px"
+        android:layout_marginRight="32px"
+        android:src="@drawable/ic_green_gou"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</com.zhy.autolayout.AutoRelativeLayout>

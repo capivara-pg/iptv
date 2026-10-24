@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_1f202a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/mRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/columnListRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <com.mobile.brasiltv.view.KoocanEmptyView
+                android:id="@+id/frag_column_loadingView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:emptyShowType="loading"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/color_ffffff"
+                android:gravity="center"
+                android:layout_gravity="end|bottom"
+                android:id="@+id/mTvNoAd"
+                android:background="@drawable/bg_no_ad_for_vips"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="34px"
+                android:layout_marginRight="24px"
+                android:layout_marginBottom="11px"
+                android:minWidth="280px"
+                android:text="@string/no_ad_for_vips"/>
+        </com.zhy.autolayout.AutoFrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.mobile.brasiltv.view.adView.AdaptiveAdContainer
+        android:id="@+id/mAavContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_bg"
+    android:paddingBottom="24px"
+    android:layout_width="match_parent"
+    android:layout_height="156px">
+    <com.mobile.brasiltv.view.RoundedImageView
+        android:id="@+id/mIvPost"
+        android:layout_width="96px"
+        android:layout_height="132px"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="6dp"/>
+    <TextView
+        android:textSize="24px"
+        android:textStyle="bold"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:id="@+id/mTvNum"
+        android:layout_width="42px"
+        android:layout_height="28px"/>
+    <TextView
+        android:textSize="28px"
+        android:textColor="@color/color_ffffff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/mTitle"
+        android:layout_width="match_parent"
+        android:layout_height="132px"
+        android:layout_marginLeft="126px"
+        android:maxLines="2"/>
+</com.zhy.autolayout.AutoFrameLayout>

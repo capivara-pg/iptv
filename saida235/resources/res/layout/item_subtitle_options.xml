@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLayout"
+    android:layout_width="match_parent"
+    android:layout_height="130px">
+    <TextView
+        android:textSize="32px"
+        android:textColor="@color/color_1a1a1a"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/mTvOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:text="@string/subtitle_language_pt"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/mIvSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40px"
+        android:src="@drawable/ic_green_gou"/>
+</com.zhy.autolayout.AutoFrameLayout>

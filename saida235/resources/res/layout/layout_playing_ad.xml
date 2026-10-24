@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mobile.brasiltv.view.adView.SmallAdNativeView
+        android:id="@+id/mSanvAd"
+        android:layout_width="650px"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:id="@+id/mTvCountDown"
+        android:background="@drawable/bg_count_down_no_ad_for_vips"
+        android:layout_width="wrap_content"
+        android:layout_height="44px"
+        android:layout_marginTop="15px"
+        android:minWidth="270px"
+        android:text="@string/no_ad_for_vips"/>
+</merge>

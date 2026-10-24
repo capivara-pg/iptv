@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_1f202a"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.TitleBarView
+        android:id="@+id/mTbvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBgColor="@color/color_191a23"
+        app:titleCloseIcon="@drawable/icon_close_white"
+        app:titleText="@string/be_bind_suc_title"
+        app:titleTextColor="@color/color_ffffff"/>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="153px"
+        android:layout_height="153px"
+        android:layout_marginTop="233px"
+        android:src="@drawable/ic_operate_suc"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:id="@+id/mTvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90px"
+        android:layout_marginTop="125px"
+        android:layout_marginRight="90px"/>
+</com.zhy.autolayout.AutoLinearLayout>

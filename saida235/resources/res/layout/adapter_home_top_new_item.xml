@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mLinearLayout"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20px">
+    <com.mobile.brasiltv.view.AutoCardView
+        android:orientation="vertical"
+        android:id="@+id/mLayout"
+        android:clickable="true"
+        android:layout_width="270px"
+        android:layout_height="372px"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8px">
+        <ImageView
+            android:id="@+id/mIvPoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/special_cloumn_img_placeholder"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shape_bg_item_top"/>
+        <TextView
+            android:textSize="20px"
+            android:textColor="@color/color_FFB443"
+            android:layout_gravity="bottom"
+            android:id="@+id/mTvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_marginBottom="18px"
+            android:drawableLeft="@drawable/icon_score_top"
+            android:drawablePadding="10px"/>
+        <ImageView
+            android:layout_gravity="bottom"
+            android:id="@+id/mIvTop"
+            android:layout_width="match_parent"
+            android:layout_height="174px"/>
+    </com.mobile.brasiltv.view.AutoCardView>
+    <TextView
+        android:textSize="28px"
+        android:textColor="@color/color_ffffff"
+        android:ellipsize="end"
+        android:id="@+id/mTvProgramName"
+        android:layout_width="280px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="384px"
+        android:text="The Call of the Wild series 10"
+        android:maxLines="2"/>
+</com.zhy.autolayout.AutoFrameLayout>

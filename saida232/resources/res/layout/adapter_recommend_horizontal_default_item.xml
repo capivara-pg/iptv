@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="24px">
+    <com.mobile.brasiltv.view.AutoCardView
+        android:orientation="vertical"
+        android:id="@+id/mLayout"
+        android:clickable="true"
+        android:layout_width="268px"
+        android:layout_height="372px"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8px">
+        <ImageView
+            android:id="@+id/posterImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/special_cloumn_img_placeholder"
+            android:scaleType="fitXY"/>
+    </com.mobile.brasiltv.view.AutoCardView>
+    <TextView
+        android:textSize="24px"
+        android:textColor="@color/color_ffffff"
+        android:ellipsize="end"
+        android:id="@+id/mPosterName"
+        android:layout_width="221px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19px"
+        android:maxLines="2"/>
+    <TextView
+        android:textSize="15sp"
+        android:textColor="@color/color_333333"
+        android:ellipsize="end"
+        android:id="@+id/mPosterNameSpecial"
+        android:paddingTop="4px"
+        android:paddingBottom="6px"
+        android:visibility="gone"
+        android:layout_width="210px"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+</com.zhy.autolayout.AutoLinearLayout>

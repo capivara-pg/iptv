@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.mobile.brasiltv.view.AutoCardView
+        android:id="@+id/mAcvWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/transparent">
+        <com.mobile.brasiltv.view.RoundedImageView
+            android:id="@+id/ivInterstitial"
+            android:layout_width="560px"
+            android:layout_height="500px"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="20px"/>
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/color_fefefe"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:id="@+id/mTvFlag"
+            android:background="@color/color_99000000"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:minWidth="120px"
+            android:text="@string/ads"
+            android:paddingStart="10px"
+            android:paddingEnd="10px"/>
+    </com.mobile.brasiltv.view.AutoCardView>
+    <ImageView
+        android:id="@+id/ivClose"
+        android:padding="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68px"
+        android:src="@drawable/icon_white_close"/>
+</com.zhy.autolayout.AutoLinearLayout>

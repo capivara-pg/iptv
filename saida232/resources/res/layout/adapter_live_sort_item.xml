@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mLayoutSort"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <TextView
+        android:textSize="30px"
+        android:textColor="@color/ffffff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/mTextSortName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="24px"
+        android:text="Lista de Canais"
+        android:singleLine="true"/>
+</com.zhy.autolayout.AutoLinearLayout>

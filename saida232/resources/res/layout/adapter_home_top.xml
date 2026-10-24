@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mLayoutTop"
+    android:layout_width="match_parent"
+    android:layout_height="645px">
+    <TextView
+        android:textSize="36px"
+        android:textStyle="bold"
+        android:textColor="@color/color_fffefe"
+        android:id="@+id/mTvColumnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23px"
+        android:layout_marginTop="25px"
+        android:text="Top10"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRvContent"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="30px"
+        android:layout_weight="1"/>
+    <com.mobile.brasiltv.view.MarqueeTextView
+        android:textSize="24px"
+        android:textColor="@color/color_fffefe"
+        android:ellipsize="marquee"
+        android:id="@+id/mTvProgramName"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="362px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="12px"
+        android:text="The Call of the Wild series 10"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"/>
+</com.zhy.autolayout.AutoLinearLayout>

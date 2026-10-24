@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:background="@drawable/selector_portrait_episode_tab_item_bg"
+    android:layout_width="80dp"
+    android:layout_height="32dp"
+    android:layout_marginLeft="8dp">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/selector_color_vod_episode"
+        android:layout_gravity="center"
+        android:id="@+id/text_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.zhy.autolayout.AutoFrameLayout>

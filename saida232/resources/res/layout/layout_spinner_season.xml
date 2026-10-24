@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/color_ffffff"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/mTvSeason"
+        android:paddingLeft="13px"
+        android:paddingRight="13px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/mIvArrow"
+        android:layout_width="22px"
+        android:layout_height="14px"
+        android:layout_marginRight="13px"
+        android:src="@drawable/selector_email_arrow"
+        android:scaleType="fitXY"/>
+</merge>

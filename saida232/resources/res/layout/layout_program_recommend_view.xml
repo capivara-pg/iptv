@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoFrameLayout
+        android:paddingLeft="22px"
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_important_white"
+            android:layout_gravity="center"
+            android:id="@+id/mTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_might_also_like"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/mImgRefresh"
+            android:visibility="gone"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginRight="15px"
+            android:src="@drawable/home_icon_refurbish"
+            android:scaleType="centerInside"/>
+    </com.zhy.autolayout.AutoFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerChange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</merge>

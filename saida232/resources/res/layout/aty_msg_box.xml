@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.TitleBarView
+        android:id="@+id/mTbvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBgColor="@color/color_191a23"
+        app:titleMenuIcon="@drawable/icon_delete_history"
+        app:titleText="@string/msg_box_title"
+        app:titleTextColor="@color/color_important_white"/>
+    <View
+        android:background="@color/color_secondary_background"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/mStlMsgTab"
+        android:background="@color/color_191a23"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        app:tl_indicator_color="@color/transparent"
+        app:tl_indicator_corner_radius="5dp"
+        app:tl_indicator_margin_left="2dp"
+        app:tl_indicator_margin_right="2dp"
+        app:tl_indicator_style="BLOCK"
+        app:tl_tab_space_equal="true"
+        app:tl_textBold="BOTH"
+        app:tl_textSelectColor="@color/color_important"
+        app:tl_textsize="16sp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mVpContent"
+        android:background="@color/color_secondary_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.zhy.autolayout.AutoLinearLayout>

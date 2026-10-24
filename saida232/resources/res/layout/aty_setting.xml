@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_FF1C1D23"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.TitleBarView
+        android:id="@+id/mTbvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBgColor="@color/color_FF292A30"
+        app:titleText="@string/menu_setting"
+        app:titleTextColor="@color/color_ffffff"/>
+    <com.mobile.brasiltv.view.setting.MenuItem
+        android:id="@+id/mMiNotify"
+        android:background="@color/color_FF292A30"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:layout_marginTop="15px"
+        app:menuIcon="@drawable/icon_mine_notification"
+        app:menuName="@string/msg_notification"
+        app:menuRightIcon="@drawable/icon_mine_arrow"/>
+    <com.mobile.brasiltv.view.setting.MenuItem
+        android:id="@+id/mMiUpgrade"
+        android:background="@color/color_FF292A30"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        app:menuFlag="@drawable/icon_new_version"
+        app:menuIcon="@drawable/icon_mine_check"
+        app:menuInfo="V 1.0.1"
+        app:menuName="@string/mine_check"
+        app:menuRightIcon="@drawable/icon_mine_arrow"/>
+    <com.mobile.brasiltv.view.setting.MenuItem
+        android:id="@+id/mMiAboutUs"
+        android:background="@color/color_FF292A30"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        app:menuIcon="@drawable/icon_mine_about"
+        app:menuName="@string/mine_about"
+        app:menuRightIcon="@drawable/icon_mine_arrow"/>
+</com.zhy.autolayout.AutoLinearLayout>

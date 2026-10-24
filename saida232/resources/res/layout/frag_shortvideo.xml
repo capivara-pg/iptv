@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.KoocanEmptyView
+        android:id="@+id/mLoadingView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyShowType="loading"/>
+    <com.mobile.brasiltv.view.shortvideo.StretchPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="32px"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/mTvDataTip"
+        android:background="@color/color_e6000000"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_marginLeft="55px"
+        android:layout_marginRight="55px"
+        android:text="@string/short_video_using_mobile_data"/>
+</com.zhy.autolayout.AutoFrameLayout>

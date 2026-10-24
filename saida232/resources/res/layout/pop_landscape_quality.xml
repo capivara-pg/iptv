@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPopController"
+    android:background="@drawable/bg_fullscreen_function_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/color_important_white"
+        android:id="@+id/mTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="56px"
+        android:layout_marginLeft="40px"
+        android:layout_marginBottom="40px"
+        android:text="@string/play_selete_pisode"
+        android:layout_above="@+id/mRvQuality"/>
+    <ImageView
+        android:id="@+id/ivClose"
+        android:padding="14px"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginRight="10px"
+        android:layout_marginBottom="40px"
+        android:src="@mipmap/close"
+        android:layout_above="@+id/mRvQuality"
+        android:layout_alignParentRight="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRvQuality"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160px"
+        android:layout_alignParentBottom="true"/>
+</com.zhy.autolayout.AutoRelativeLayout>

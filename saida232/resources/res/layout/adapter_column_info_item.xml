@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mLayoutColumnItemLeftTop"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30px">
+    <com.mobile.brasiltv.view.AutoCardView
+        android:layout_width="match_parent"
+        android:layout_height="360px"
+        app:cardCornerRadius="8px">
+        <ImageView
+            android:id="@+id/iv_columnImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/column_image_placeholder"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@+id/mImageTs"
+            android:layout_width="37px"
+            android:layout_height="43px"
+            android:src="@drawable/image_ts"/>
+        <ImageView
+            android:layout_gravity="bottom"
+            android:id="@+id/mImageCovered"
+            android:background="@drawable/bg_home_program_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="100px"/>
+        <TextView
+            android:textSize="20px"
+            android:textColor="@color/color_fffefe"
+            android:gravity="center"
+            android:layout_gravity="top|left"
+            android:id="@+id/tv_columnScore"
+            android:background="@color/color_ff5500"
+            android:layout_width="48px"
+            android:layout_height="30px"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="6px"
+            android:text="8.5"/>
+        <TextView
+            android:textSize="20px"
+            android:textColor="@color/color_ffffff"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:id="@+id/mTvEpisodeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12px"
+            android:text="Updated until the 8"/>
+    </com.mobile.brasiltv.view.AutoCardView>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/color_ffffff"
+        android:id="@+id/tv_columnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginTop="10px"
+        android:text="Pacifig rim"
+        android:maxLines="2"/>
+</com.zhy.autolayout.AutoLinearLayout>

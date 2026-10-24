@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPopController"
+    android:background="@drawable/bg_fullscreen_function_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="36px"
+        android:textColor="@color/color_ffffff"
+        android:id="@+id/mTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44px"
+        android:layout_marginBottom="30px"
+        android:text="@string/fun_share"
+        android:layout_above="@+id/mRvOptions"/>
+    <ImageView
+        android:id="@+id/ivClose"
+        android:padding="14px"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginRight="44px"
+        android:layout_marginBottom="24px"
+        android:src="@mipmap/close"
+        android:layout_above="@+id/mRvOptions"
+        android:layout_alignParentRight="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRvOptions"
+        android:paddingBottom="72px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44px"
+        android:layout_alignParentBottom="true"
+        android:overScrollMode="never"/>
+</com.zhy.autolayout.AutoRelativeLayout>

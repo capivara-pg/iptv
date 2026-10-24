@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/mLayoutHint"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208px">
+        <ImageView
+            android:layout_width="320px"
+            android:layout_height="320px"
+            android:src="@drawable/icon_no_match_history"/>
+        <TextView
+            android:textSize="24px"
+            android:textColor="@color/color_FF79797F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="@string/match_no_statistics_tips"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.mobile.brasiltv.view.SubLoadingView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mLoading"
+        android:visibility="visible"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginTop="352px"/>
+</com.zhy.autolayout.AutoFrameLayout>

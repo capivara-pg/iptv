@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbarSize="3dp"
+        android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb"
+        android:scrollbarTrackVertical="@drawable/shape_scrollbar_track"
+        android:scrollbarStyle="outsideInset"
+        android:id="@+id/slItemFeedback"
+        android:paddingLeft="100px"
+        android:paddingRight="454px"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105px"
+        android:layout_marginBottom="5px"
+        android:scrollbarFadeDuration="0"/>
+</merge>

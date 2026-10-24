@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mLayoutSetInfo"
+    android:background="@drawable/bg_fullscreen_function_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px"
+        android:layout_above="@+id/recyclerSetInfo">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/color_important_white"
+            android:id="@+id/mTvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:text="@string/play_selete_pisode"/>
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@+id/ivClose"
+            android:padding="14px"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_marginRight="10px"
+            android:src="@mipmap/close"/>
+    </com.zhy.autolayout.AutoFrameLayout>
+    <com.mobile.brasiltv.view.MaxHeightRecyclerView
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_gravity="bottom"
+        android:id="@+id/recyclerSetInfo"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="54dp"
+        android:layout_alignParentBottom="true"
+        android:fadeScrollbars="true"
+        app:maxHeight="764px"/>
+</com.zhy.autolayout.AutoRelativeLayout>

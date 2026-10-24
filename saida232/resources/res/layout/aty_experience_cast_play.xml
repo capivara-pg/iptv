@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_191a23"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="448px">
+        <include layout="@layout/include_vod_play_cast"/>
+        <ImageView
+            android:id="@+id/mNavBack"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_marginTop="32px"
+            android:src="@drawable/app_icon_whiteback"
+            android:scaleType="center"/>
+    </com.zhy.autolayout.AutoFrameLayout>
+    <TextView
+        android:textSize="36px"
+        android:textStyle="bold"
+        android:textColor="@color/color_ffffff"
+        android:id="@+id/mTvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29px"
+        android:layout_marginTop="58px"
+        android:text="@string/cast_test_dlna"/>
+    <TextView
+        android:textSize="28px"
+        android:textColor="@color/color_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29px"
+        android:layout_marginTop="33px"
+        android:layout_marginRight="29px"
+        android:text="@string/cast_service_tips"/>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/llContainer"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="26px"
+        android:textColor="@drawable/color_match_date_tab"
+        android:id="@+id/tvWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20px"
+        android:textColor="@drawable/color_match_date_tab"
+        android:gravity="center"
+        android:id="@+id/tvDate"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6px"
+        android:text="123"/>
+</com.zhy.autolayout.AutoLinearLayout>

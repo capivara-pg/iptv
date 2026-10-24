@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/color_2c2d39"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginLeft="29px"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="21px"
+        android:layout_marginBottom="20px"
+        android:src="@mipmap/ic_account_add"/>
+    <TextView
+        android:textSize="32px"
+        android:textColor="@color/color_ffffff"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_account_add"
+        android:singleLine="true"/>
+</com.zhy.autolayout.AutoLinearLayout>

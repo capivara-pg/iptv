@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240px"
+    android:layout_height="240px">
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:indeterminateDrawable="@drawable/progress_loading"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="?android:attr/progressBarStyleLarge"/>
+    <TextView
+        android:textColor="@color/player_controller_buffer_text_color"
+        android:id="@+id/loadingTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        android:singleLine="true"
+        android:layout_below="@+id/loadingBar"
+        android:layout_centerHorizontal="true"/>
+</com.zhy.autolayout.AutoRelativeLayout>

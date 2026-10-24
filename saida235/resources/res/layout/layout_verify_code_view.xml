@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:textSize="12sp"
+        android:textColor="@color/color_ffffff"
+        android:textColorHint="@color/color_999999"
+        android:id="@+id/mEtVerifyCode"
+        android:background="@drawable/selector_bg_login_edit"
+        android:paddingLeft="38px"
+        android:paddingRight="38px"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20px"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:inputType="number"/>
+    <TextView
+        android:enabled="false"
+        android:textSize="15sp"
+        android:textColor="@color/color_ffffff"
+        android:gravity="center"
+        android:id="@+id/mTvSend"
+        android:background="@drawable/selector_btn_send"
+        android:layout_width="202px"
+        android:layout_height="match_parent"
+        android:text="@string/be_send_sms"/>
+</merge>

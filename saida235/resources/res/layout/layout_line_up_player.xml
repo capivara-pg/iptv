@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="126px"
+    android:layout_height="116px">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mIvPlayer"
+        android:layout_width="64px"
+        android:layout_height="64px"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="20px"
+        android:textColor="@color/color_000000"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mPlayerNo"
+        android:layout_width="64px"
+        android:layout_height="64px"/>
+    <TextView
+        android:textSize="22px"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:layout_gravity="bottom"
+        android:id="@+id/mPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="52px"
+        android:maxLines="2"/>
+</merge>

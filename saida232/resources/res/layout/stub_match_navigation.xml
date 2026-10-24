@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mNavigationPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mobile.brasiltv.view.MatchNavBar
+        android:orientation="horizontal"
+        android:id="@+id/mMatchNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="72px"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mVpNav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32px"/>
+</com.zhy.autolayout.AutoLinearLayout>
